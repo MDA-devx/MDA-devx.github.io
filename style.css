@@ -169,7 +169,7 @@ li a:hover {
 }
 .project-title {
   /* flex: 60%; */
-  max-width: 50%;
+  max-width: 40%;
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
