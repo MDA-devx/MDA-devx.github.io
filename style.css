@@ -54,9 +54,6 @@ header {
     -webkit-text-fill-color: transparent;  
   animation: rainbow-animation 35s linear infinite;
 }
-#navbar {
-  position: sticky;
-}
 .navbar {
   position: sticky;
 }
@@ -149,7 +146,7 @@ li a:hover {
   filter: drop-shadow(5px 5px 5px #000);
   margin: 12px;
 }
-.project-tile {
+.projects-tile {
   display: flex;
   /* flex-flow: column wrap; */
   flex-wrap: wrap;
