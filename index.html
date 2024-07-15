@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./dz.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <title>DZ Soluciones Tecnologicas</title>
+    <style>
+        @media (max-width: 600px) { /* debajo de esa res modifica los sig param*/
+            header { display: block; }
+            #welcome-section { display: block; }
+            .works { margin-top: 24px;}
+            .cursor { font-size: 19px;}
+            .helmet { height: 25vh;}
+        }
+
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <div class="banner text-rainbow">
+           <img src="dz.png" alt="" class="mda">
+           <span class="dz">DZ Soluciones Tecnologicas</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <p></p>
+        <br>
+          <!-- <div class="barra">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            <div class="color5"></div>
+          </div> -->
+    </header>
+    <main>
+        
+        
+        <div id="about">
+            <div class="welcome-img">
+                <img src="./img/" alt="image" class="helmet">
+                <h1>Web Rider</h1>
+            </div>
+            
+            <div class="welcome-text">
+                <p>
+                    Muñiz Damian Alejandro<br>
+
+                </p>
+                <p class="cursor">
+                    DZ Soluciones Tecnologicas
+                </p>
+            </div>
+
+        </div>
+        <div id="servicios">
+            <p class="works">Nuestras Prestaciones</p>
+            <div id="project-tile" class="project-tile">
+             <div class="project-title">
+                
+                 <a href="" class="left-serv">
+                     <p>Soluciones Informaticas</p>
+                     <img class="page_img" src="./img/datacc.jpg" alt="">
+                 </a>
+                 <div class="left-desc">
+                    servicios <br>
+                    servicios servicios <br>
+                    servicios <br>
+                    servicios <br>
+                    servicios <br>
+                </div>
+             </div>
+             <div class="project-title">
+                <a href="" class="left-serv">
+                    <p>Video Seguridad - IP - CCTV</p>
+                    <img class="page_img" src="./img/seccam.jpg" alt="">
+                </a>
+                <div class="left-desc">
+                    servicios <br>
+                    servicios servicios <br>
+                    servicios <br>
+                    servicios <br>
+                    servicios <br>
+                </div>
+            </div>
+            <div class="project-title">
+                <a href="" class="left-serv">
+                    <p>Servicio Tecnico</p>
+                    <img class="page_img" src="./img/cc.jpg" alt="">
+                </a>
+                <div class="left-desc">
+                    servicios <br>
+                    servicios servicios <br>
+                    servicios <br>
+                    servicios <br>
+                    servicios <br>
+                </div>
+            </div>
+            <div class="project-title">
+                <a href="" class="left-serv">
+                    <p>Mantenimiento</p>
+                    <img class="page_img" src="./img/manten1.png" alt="">
+                </a>
+                <div class="left-desc">
+                    servicios <br>
+                    servicios servicios <br>
+                    servicios <br>
+                    servicios <br>
+                    servicios <br>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="clientes">
+            <div class="works">Nuestros Clientes <br></div>
+            
+            <div class="bannerc">
+                <div class="banner-inner">
+                  <img src="https://via.placeholder.com/300" alt="Image 1">
+                  <img src="https://via.placeholder.com/300" alt="Image 2">
+                  <img src="https://via.placeholder.com/300" alt="Image 3">
+                  <img src="https://via.placeholder.com/300" alt="Image 4">
+                  <img src="https://via.placeholder.com/300" alt="Image 5">
+                  <img src="https://via.placeholder.com/300" alt="Image 1">
+                  <img src="https://via.placeholder.com/300" alt="Image 2">
+                  <img src="https://via.placeholder.com/300" alt="Image 3">
+                  <img src="https://via.placeholder.com/300" alt="Image 4">
+                  <img src="https://via.placeholder.com/300" alt="Image 5">
+                </div>
+               
+<script>
+   let bannerInner = document.querySelector('.banner-inner');
+let startX, startY, translateX;
+
+bannerInner.addEventListener('mousedown', (e) => {
+  if (e.type === 'mousedown') {
+    startX = e.clientX;
+    startY = e.clientY;
+    translateX = bannerInner.getBoundingClientRect().left;
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+  }
+});
+
+bannerInner.addEventListener('touchstart', (e) => {
+  if (e.type === 'touchstart') {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    translateX = bannerInner.getBoundingClientRect().left;
+    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchend', onTouchEnd);
+  }
+});
+
+function onMouseMove(e) {
+  let deltaX = e.clientX - startX;
+  bannerInner.style.transform = `translateX(${translateX + deltaX}px)`;
+}
+
+function onMouseUp() {
+  document.removeEventListener('mousemove', onMouseMove);
+  document.removeEventListener('mouseup', onMouseUp);
+}
+
+function onTouchMove(e) {
+  let deltaX = e.touches[0].clientX - startX;
+  bannerInner.style.transform = `translateX(${translateX + deltaX}px)`;
+}
+
+function onTouchEnd() {
+  document.removeEventListener('touchmove', onTouchMove);
+  document.removeEventListener('touchend', onTouchEnd);
+}
+  </script>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contacto" class="contact-box">
+            <p class="contacto">Contactános:</p>
+            
+            <div class="social-icons">
+                <a href="https://wa.me/+541127980112">WhatsApp!<i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+541127980112">+541127980112</a>
+                <a href="mailto:dzsoluciones@gmail.com">dzsoluciones@gmail.com</a>
+            </div>
+    </footer>
+</body>
+</html>
