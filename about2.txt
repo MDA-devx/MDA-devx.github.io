@@ -1,20 +1,15 @@
       [[DZ Soluciónes Tecnológicas]]
 Asistencia confiable, al alcance de su mano.
 
-
-Nuestra Empresa
-
-Somo un equipo de profesionales con amplia 
-experiencia y trayectoria en el rubro de la 
-tecnologia. Desde hace mas de diez años nos 
-dedicamos al mantenimiento y reparacion de los
-componentes electronicos y sistemas
-informaticos.
-Ofrecemos soluciones a la medida del cliente, 
-desde PyMe y particulares hasta grandes clientes 
-en todo el territorio.
-Nuestro objetivo es erradicar cualquier desperfecto,
-brindar garantia y soporte a largo plazo dentro de
- los requerimientos de la industria.
-
-
+"Nuestra empresa es un 
+equipo de profesionales con más de diez años de 
+experiencia en el mantenimiento y reparación de 
+componentes electrónicos y sistemas 
+informáticos. Ofrecemos soluciones 
+personalizadas para PyMes, particulares y 
+grandes clientes en todo el territorio, 
+adaptándonos a las necesidades específicas de 
+cada uno. Nuestro objetivo es resolver 
+problemas complejos y brindar garantía y 
+soporte a largo plazo, cumpliendo con los 
+estándares de la industria."
